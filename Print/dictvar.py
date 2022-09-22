@@ -26,3 +26,36 @@ print(address)
 #Example of how to remove a key value pair 
 address.pop("soverign")
 print(address)
+
+#Example of how to add two dictories (customer record & address) and add two lists
+customer_record = {
+    "first_name": 'Megan',
+    "last_name": 'Crowthers',
+    "current_address": address,
+    "previous_addresses":  [
+        {
+            "house_no": 112,
+            "street":"Main Road",
+            "area": "Wilby",   
+            "postcode": "NN8 2UE"
+        },
+        {
+            "house_no": "Flat 7, 2-4",
+            "street":"Edith Street",
+            "area": "Northampton",   
+            "postcode": "NN1 2EP"
+        },
+    ]
+}
+
+#How to make a list look prettier from a layout 
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(customer_record)
+
+
+#printing specific values from a dict/list
+print(customer_record["first_name"])
+print(customer_record["current_address"]["postcode"])
+print(customer_record["previous_addresses"][0]["postcode"])
+

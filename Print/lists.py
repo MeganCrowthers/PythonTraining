@@ -30,3 +30,20 @@ print(dog_names)
 dog_names.pop(0)
 print(dog_names)
 #This can be used to remove any item in list, but must know which item
+
+#How to a list within a list 
+fave_foods = [
+    "Chips",
+    "Crisps",
+    "Passion Fruit",
+    "Coffee",
+    [
+        "Sponge Cake",
+        "Carrot Cake",
+        "Chocolate Cake",
+        "Velvet Cake",
+    ]
+]
+
+#print a specific value within 2 lists 
+print(fave_foods[4][2])
