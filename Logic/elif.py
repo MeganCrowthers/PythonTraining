@@ -1,7 +1,4 @@
 ##elif is a way of grouping IF statements together - you can break out of if statement once true 
-
-from ast import Or
-
 #Python thought our num was a 'str' and not 'int' so we have forced the output to be an int
 num = int(input("Please input a number"))
 print(num)
